@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Site</title>
+  <style>
+    /* Background */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a001f, #3d0066, #5a008f);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* About Me */
+    .about {
+      max-width: 500px;
+      margin: 0 auto 40px auto;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      padding: 0 20px;
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 50px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .links a:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: scale(1.05);
+    }
+
+    /* Glowing Support Button */
+    .support-btn {
+      background: gold;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 15px gold, 0 0 30px gold;
+      animation: glow 1.5s infinite alternate;
+      transition: transform 0.2s;
+    }
+
+    .support-btn:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 10px gold, 0 0 20px gold; }
+      to { box-shadow: 0 0 20px gold, 0 0 40px gold; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Profile Picture -->
+  <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+
+  <!-- About Me -->
+  <div class="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m [Your Name]. This is my personal site where you can find more about me and my projects.</p>
+  </div>
+
+  <!-- Links -->
+  <div class="links">
+    <a href="#">Bot Link 1</a>
+    <a href="#">Bot Link 2</a>
+    <a href="#">Bot Link 3</a>
+    <a href="#">Bot Link 4</a>
+    <a href="#">Bot Link 5</a>
+  </div>
+
+  <!-- Support Me Button -->
+  <a href="#" class="support-btn">💛 Support Me</a>
+</body>
+</html>
