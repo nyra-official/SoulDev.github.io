@@ -64,27 +64,29 @@
     }
 
     /* Glowing Support Button */
-    .support-btn {
-      background: gold;
-      color: black;
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding: 15px 40px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 0 15px gold, 0 0 30px gold;
-      animation: glow 1.5s infinite alternate;
-      transition: transform 0.2s;
+   .support-btn {
+     display: inline-block;       /* makes it a proper button */
+     background: gold;
+     color: black;
+     font-size: 1.2rem;
+     font-weight: bold;
+     padding: 15px 40px;
+     border-radius: 50px;
+     text-decoration: none;
+     box-shadow: 0 0 15px gold, 0 0 30px gold;
+     animation: glow 1.5s infinite alternate;
+     transition: transform 0.2s;
     }
 
-    .support-btn:hover {
-      transform: scale(1.1);
+  .support-btn:hover {
+     transform: scale(1.1);
     }
 
-    @keyframes glow {
-      from { box-shadow: 0 0 10px gold, 0 0 20px gold; }
-      to { box-shadow: 0 0 20px gold, 0 0 40px gold; }
-    }
+  @keyframes glow {
+     from { box-shadow: 0 0 10px gold, 0 0 20px gold; }
+     to   { box-shadow: 0 0 20px gold, 0 0 40px gold; }
+   }
+
 
         /* Black bar at bottom */
     .footer-bar {
