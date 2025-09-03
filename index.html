@@ -30,34 +30,28 @@
       margin-bottom: 20px;
     }
 
-/* Filler section background */
-.about-section {
-  width: 100%;
-  background: #2b2b2b;
-  padding: 50px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ffffff;
-  border-radius: 12px;
-}
-
-/* Content inside the box */
 .about {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  color: #ffffff;
+  display: inline-block;       /* hugs content width */
+  background: #2b2b2b;         /* dark grey box */
+  padding: 20px 30px;          /* spacing inside the box */
+  border: 2px solid #ffffff;   /* thin white border */
+  border-radius: 12px;         /* rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5); /* subtle depth */
+  color: #ffffff;              /* text color */
+  text-align: left;            /* professional alignment */
 }
 
 .about h2 {
   color: #C44E1F;
-  margin-bottom: 15px;
+  margin: 0 0 10px 0;
 }
 
 .about p {
   margin: 0;
   line-height: 1.5;
-  white-space: pre-line;
+  white-space: pre-line;       /* respects line breaks */
 }
+
     /* Links */
     .links {
       display: flex;
